@@ -149,11 +149,9 @@ function fio_throughput_randw {
 store_index=(0 1 2)
 store_types=(NVME_SSD SSD HDD)
 devs=( /dev/nvme0n1 /dev/sdb /dev/sda  )
-devs=( /dev/nvme0n1)
 
 
 metrics=(throughput bandwidth latency )
-# metrics=(bandwidth throughput latency )
 
 bench_types=(randw randr)
 
