@@ -153,9 +153,9 @@ devs=( /dev/nvme0n1 /dev/sdb /dev/sda  )
 
 metrics=(throughput bandwidth latency )
 
-bench_types=(randw randr)
+bench_types=(randr randw)
 
-for bench_type in ${bench_types}
+for bench_type in ${bench_types[*]}
 do
     for metric in ${metrics[*]}
     do
